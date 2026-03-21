@@ -43,7 +43,7 @@ public class BreathingMeter : MonoBehaviour
     public void slideBlink()
     {
         float t = Mathf.PingPong(Time.time, 0.8f);
-        BreathingFill.color = Color.Lerp(blinkingColor, normalColor, t);
+        BreathingFill.color = Color.Lerp(blinkingColor, Color.white, t);
     }
 
     // Update is called once per frame
