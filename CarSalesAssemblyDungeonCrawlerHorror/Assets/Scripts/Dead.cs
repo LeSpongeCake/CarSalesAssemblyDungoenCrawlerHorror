@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dead : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class Dead : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Update is called once per frame
 
         public void Die()
@@ -31,10 +37,7 @@ public class Dead : MonoBehaviour
 
             Debug.Log("Player is dead");
 
-            if (WastedPanel != null)
-                WastedPanel.SetActive(true);
-            if (WastedText != null)                
-                WastedText.text = "WASTED";
+            SceneManager.LoadScene("End");
         }
 
     void Update()
