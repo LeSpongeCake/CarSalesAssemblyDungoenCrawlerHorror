@@ -98,7 +98,7 @@ public class Event_Manager : MonoBehaviour
     {
         if (ADpanel.anchoredPosition.x >= 765)
         {
-            ADpanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(ADpanel.anchoredPosition, targetADspot, 120 * Time.deltaTime);
+            ADpanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(ADpanel.anchoredPosition, targetADspot, 160 * Time.deltaTime);
         }
     }
 
@@ -106,12 +106,12 @@ public class Event_Manager : MonoBehaviour
     {
         if (Steampanel.anchoredPosition.y < -447 && steamdown == 0)
         {
-            Steampanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(Steampanel.anchoredPosition, targetADspot, 120 * Time.deltaTime);
+            Steampanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(Steampanel.anchoredPosition, targetADspot, 160 * Time.deltaTime);
         }
         else 
         {
             steamdown = 1;
-            Steampanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(Steampanel.anchoredPosition, Steamstartspot, 120 * Time.deltaTime);
+            Steampanel.anchoredPosition = UnityEngine.Vector2.MoveTowards(Steampanel.anchoredPosition, Steamstartspot, 160 * Time.deltaTime);
         }
     }
 
