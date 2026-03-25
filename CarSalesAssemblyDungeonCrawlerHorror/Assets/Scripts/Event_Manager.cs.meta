@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a8de30add305ed04d8eb46045757edc2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - timer: {instanceID: 0}
+  - background_Manager: {instanceID: 0}
+  - display_score: {instanceID: 0}
+  - ADpanel: {instanceID: 0}
+  - Steampanel: {instanceID: 0}
+  - jumpscareimage: {instanceID: 0}
+  - steamAudioSource: {instanceID: 0}
+  - steamSound: {instanceID: 0}
+  - adAudioSource: {instanceID: 0}
+  - adSound: {fileID: 8300000, guid: 8bf0fb7daeab31446ab046b304da9176, type: 3}
+  - carAudioSource: {instanceID: 0}
+  - carFixedSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
